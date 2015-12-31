@@ -1,8 +1,12 @@
 说明
 ===
-Webpack  ->  革命性的模块化打包工具
-Angular  ->  前端MVVM框架
-CoffeeScript  ->   函数式编程，提供高效的编码方式
+    
+    Webpack  ->  革命性的模块化打包工具
+
+    Angular  ->  前端MVVM框架
+
+    CoffeeScript  ->   函数式编程，提供高效的编码方式
+    
 
 需求
 ---
