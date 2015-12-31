@@ -13,7 +13,7 @@
 
     node >= 5.x
     npm  >= 3.x
-    Git  >=2.x
+    Git  >= 2.x
 
 安装
 ---
