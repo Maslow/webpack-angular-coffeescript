@@ -33939,19 +33939,19 @@
 
 	ctrls.controller('TabCtrl', [
 	  '$scope', function($scope) {
-	    return $scope.title = '';
+	    return $scope.active_page = 1;
 	  }
 	]);
 
 	ctrls.controller('TabPage1Ctrl', [
 	  '$scope', function($scope) {
-	    return $scope.$parent.title = 'Page 1';
+	    return $scope.$parent.title = 'Page One';
 	  }
 	]);
 
 	ctrls.controller('TabPage2Ctrl', [
 	  '$scope', function($scope) {
-	    return $scope.$parent.title = 'Page 2';
+	    return $scope.$parent.title = 'Page Two';
 	  }
 	]);
 
@@ -33978,7 +33978,7 @@
 	var router;
 
 	router = function($stateProvider, $urlRouterProvider) {
-	  $urlRouterProvider.otherwise('/tab');
+	  $urlRouterProvider.otherwise('/tab/page1');
 	  return $stateProvider.state('tab', {
 	    url: '/tab',
 	    templateUrl: 'templates/tab.html',

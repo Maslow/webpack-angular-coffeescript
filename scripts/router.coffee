@@ -1,5 +1,5 @@
 router = ($stateProvider, $urlRouterProvider)->
-  $urlRouterProvider.otherwise '/tab'
+  $urlRouterProvider.otherwise '/tab/page1'
 
   $stateProvider.state 'tab',
     url: '/tab'
