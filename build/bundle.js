@@ -34,7 +34,7 @@
 /******/ 	__webpack_require__.c = installedModules;
 
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
+/******/ 	__webpack_require__.p = "build/";
 
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(0);
@@ -44,21 +44,17 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var app, controllers, services, uirouter;
+	var angular, app, dependencies;
 
 	__webpack_require__(1);
 
 	__webpack_require__(10);
 
-	__webpack_require__(18);
+	angular = __webpack_require__(18);
 
-	uirouter = __webpack_require__(20);
+	dependencies = [__webpack_require__(20), __webpack_require__(21), __webpack_require__(22)];
 
-	controllers = __webpack_require__(21);
-
-	services = __webpack_require__(22);
-
-	app = angular.module('app', [uirouter, controllers, services]);
+	app = angular.module('app', dependencies);
 
 	app.config(__webpack_require__(23));
 
@@ -165,31 +161,31 @@
 /* 4 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.eot";
+	module.exports = __webpack_require__.p + "assets/glyphicons-halflings-regular.eot?f4769f9bdb7466be65088239c12046d1";
 
 /***/ },
 /* 5 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2";
+	module.exports = __webpack_require__.p + "assets/glyphicons-halflings-regular.woff2?448c34a56d699c29117adc64c43affeb";
 
 /***/ },
 /* 6 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.woff";
+	module.exports = __webpack_require__.p + "assets/glyphicons-halflings-regular.woff?fa2772327f55d8198301fdb8bcfc8158";
 
 /***/ },
 /* 7 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf";
+	module.exports = __webpack_require__.p + "assets/glyphicons-halflings-regular.ttf?e18bbf611f2a2e43afc071aa2f4e1512";
 
 /***/ },
 /* 8 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.svg";
+	module.exports = __webpack_require__.p + "assets/glyphicons-halflings-regular.svg?89889688147bd7575d6327160d64e760";
 
 /***/ },
 /* 9 */
@@ -489,37 +485,37 @@
 /* 12 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "node_modules/font-awesome/fonts/fontawesome-webfont.eot";
+	module.exports = __webpack_require__.p + "assets/fontawesome-webfont.eot?32400f4e08932a94d8bfd2422702c446";
 
 /***/ },
 /* 13 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "node_modules/font-awesome/fonts/fontawesome-webfont.eot";
+	module.exports = __webpack_require__.p + "assets/fontawesome-webfont.eot?32400f4e08932a94d8bfd2422702c446";
 
 /***/ },
 /* 14 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "node_modules/font-awesome/fonts/fontawesome-webfont.woff2";
+	module.exports = __webpack_require__.p + "assets/fontawesome-webfont.woff2?db812d8a70a4e88e888744c1c9a27e89";
 
 /***/ },
 /* 15 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "node_modules/font-awesome/fonts/fontawesome-webfont.woff";
+	module.exports = __webpack_require__.p + "assets/fontawesome-webfont.woff?a35720c2fed2c7f043bc7e4ffb45e073";
 
 /***/ },
 /* 16 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "node_modules/font-awesome/fonts/fontawesome-webfont.ttf";
+	module.exports = __webpack_require__.p + "assets/fontawesome-webfont.ttf?a3de2170e4e9df77161ea5d3f31b2668";
 
 /***/ },
 /* 17 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "node_modules/font-awesome/fonts/fontawesome-webfont.svg";
+	module.exports = __webpack_require__.p + "assets/fontawesome-webfont.svg?f775f9cca88e21d45bebe185b27c0e5b";
 
 /***/ },
 /* 18 */

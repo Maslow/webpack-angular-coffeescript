@@ -1,15 +1,16 @@
 require '../node_modules/bootstrap/dist/css/bootstrap.css'
 require '../node_modules/font-awesome/css/font-awesome.css'
-require 'angular'
 
-uirouter = require 'angular-ui-router'
+angular = require 'angular'
 
-controllers = require './controllers.coffee'
+dependencies = [
+  require 'angular-ui-router'
+  require './controllers'
+  require './services'
+]
 
-services = require './services.coffee'
+app = angular.module 'app', dependencies
 
-app = angular.module 'app', [uirouter, controllers, services]
-
-app.config require './router.coffee'
+app.config require './router'
 
 module.exports = app
