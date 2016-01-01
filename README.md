@@ -23,7 +23,7 @@
 npm install webpack -g
 
 // clone source code of project
-git clone https://git.coding.net/maslow/webpack-angular-coffeescript.git
+git clone https://github.com/Maslow/webpack-angular-coffeescript.git
 
 // install dependencies of project
 cd webpack-angular-coffeescript
